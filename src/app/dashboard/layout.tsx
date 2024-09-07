@@ -34,7 +34,7 @@ export default function DashbaordLayout({
             </ul>
           </nav>
           <div className="mt-6">
-            <h2 className="text-lg font-semibold">Data Visualization</h2>
+            <h2 className="text-lg font-semibold mb-2">Data Visualization</h2>
             <ul>
               <li className="mb-2 flex items-center">
                 <IoLocationSharp className="mr-2" />
