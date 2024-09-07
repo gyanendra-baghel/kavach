@@ -3,7 +3,7 @@ const Dashboard = () => {
     <main className="w-full h-full overflow-y-scroll p-3">
       <div className="flex justify-between items-center mb-4">
         <button className="bg-orange-600 text-white px-4 py-2 rounded">
-          Add alert
+          Customize
         </button>
         <div className="flex items-center">
           <input
