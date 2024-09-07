@@ -1,3 +1,9 @@
+import { RiSettings4Fill } from "react-icons/ri";
+import { IoLocationSharp } from "react-icons/io5";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { GoHomeFill } from "react-icons/go";
+import { FaBell } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import Link from "next/link";
 
 export default function DashbaordLayout({
@@ -18,25 +24,26 @@ export default function DashbaordLayout({
           </div>
           <nav>
             <ul>
-              <li className="mb-4">
-                <i className="fas fa-tachometer-alt"></i> Dashboard
+              <li className="mb-4 flex items-center">
+                <GoHomeFill className="mr-2" /> Dashboard
               </li>
-              <li className="mb-4">
-                <i className="fas fa-bell"></i> Alerts
+              <li className="mb-4 flex items-center">
+                <FaBell className="mr-2" /> Alerts
               </li>
             </ul>
           </nav>
           <div className="mt-6">
             <h2 className="text-lg font-semibold">Data Visualization</h2>
             <ul>
-              <li className="mb-2">
-                <i className="fas fa-user"></i> Location Analysis
+              <li className="mb-2 flex items-center">
+                <IoLocationSharp className="mr-2" />
+                Location Analysis
               </li>
-              <li className="mb-2">
-                <i className="fas fa-chart-line"></i> Trends Analysis
+              <li className="mb-2 flex items-center">
+                <FaArrowTrendUp className="mr-2" /> Trends Analysis
               </li>
-              <li className="mb-2">
-                <i className="fas fa-robot"></i> Suspicious Users
+              <li className="mb-2 flex items-center">
+                <FaUser className="mr-2" /> Suspicious Users
               </li>
             </ul>
           </div>
@@ -46,7 +53,10 @@ export default function DashbaordLayout({
             <Link href="dashboard/setting">Permissions</Link>
           </div>
           <div className="my-1">
-            <Link href="dashboard/setting">Settings</Link>
+            <Link href="dashboard/setting">
+              <RiSettings4Fill />
+              Settings
+            </Link>
           </div>
         </div>
       </aside>
