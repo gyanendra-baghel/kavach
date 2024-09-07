@@ -1,8 +1,3 @@
-export const metadata: Metadata = {
-  title: "Prekshana Dashboard",
-  description: "Kavach is help to track drug traffacking.",
-};
-
 export default function DashbaordLayout({
   children,
 }: Readonly<{
