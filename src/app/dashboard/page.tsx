@@ -70,7 +70,7 @@ const Dashboard = () => {
       {/* ------ */}
       <div className="grid grid-cols-3 gap-4 mb-3">
         <div className="bg-gray-800 p-4 rounded col-span-2">
-          <h2 className="text-lg font-semibold mb-4">Target List</h2>
+          <h2 className="text-lg font-semibold mb-4">Target Spaces</h2>
           <ul>
             <li className="flex justify-between mb-2">
               <span>

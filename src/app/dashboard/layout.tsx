@@ -4,6 +4,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { GoHomeFill } from "react-icons/go";
 import { FaBell } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import { MdOutlineSecurity } from "react-icons/md";
 import Link from "next/link";
 
 export default function DashbaordLayout({
@@ -49,12 +50,15 @@ export default function DashbaordLayout({
           </div>
         </div>
         <div className="">
-          <div className="my-1">
-            <Link href="dashboard/setting">Permissions</Link>
+          <div className="my-2">
+            <Link href="dashboard/setting" className="flex items-center">
+              <MdOutlineSecurity className="mr-2" />
+              Permissions
+            </Link>
           </div>
-          <div className="my-1">
-            <Link href="dashboard/setting">
-              <RiSettings4Fill />
+          <div className="my-2">
+            <Link href="dashboard/setting" className="flex items-center">
+              <RiSettings4Fill className="mr-2" />
               Settings
             </Link>
           </div>
